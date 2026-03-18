@@ -1,0 +1,34 @@
+# =============================================================================
+# .gitignore — Files Git should NEVER track
+# =============================================================================
+
+# --- Secrets (CRITICAL) ---
+# The real .env contains passwords and secrets. Never commit it.
+.env
+
+# --- Composer-generated files ---
+# vendor/ contains third-party packages. They're huge and reproducible
+# via `composer install`. Each developer runs that command themselves.
+/vendor/
+
+# --- PHP cache files ---
+*.cache
+
+# --- OS-generated clutter ---
+.DS_Store          # macOS Finder metadata
+Thumbs.db          # Windows Explorer thumbnails
+desktop.ini        # Windows folder settings
+
+# --- IDE / Editor config ---
+.idea/             # PhpStorm / IntelliJ
+.vscode/           # VS Code (optional — some teams DO commit this)
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs ---
+/logs/
+*.log
+
+# --- Test coverage ---
+/coverage/
+.phpunit.result.cache
