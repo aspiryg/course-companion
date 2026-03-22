@@ -32,3 +32,7 @@ desktop.ini        # Windows folder settings
 # --- Test coverage ---
 /coverage/
 .phpunit.result.cache
+
+# --- idea
+.idea
+.idea/
