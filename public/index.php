@@ -29,7 +29,6 @@ Database::configure([
 ]);
 
 
-
 try {
     $pdo = Database::getInstance();
     echo '<p>Database connection successful!</p>';
